@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/CSS/Style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bayon&family=Koulen&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="mainlogo">
+                <a href="/index.html">
+                    <span>សៀមរាប​ផ្ទះខ្ញុំ</span>
+                </a>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="Temples.html">Temples</a>
+                <a href="exper.html">Experiences</a>
+                <a href="Traval.html">Travel Info</a>
+                <a href="contect.html">Contact</a>
+            </nav>
+
+            <!-- Hamburger Menu Icon -->
+            <div class="menu-toggle" id="menu-toggle">
+                &#9776;
+            </div>
+        </div>
+    </header>
+
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 id="typed-text">
+
+            </h1>
+
+            <p>
+                សៀមរាបគឺជា ខេត្តមួយនៅស្ថិតនៅភូមិភាគឦសាននៃប្រទេសកម្ពុជា ហើយសម្បូរទៅដោយប្រាប្រាសាទបុរាណជាច្រើន។
+                សៀមរាបគឺជាខេត្ដ តំបន់សម្បូរទៅដោយវប្បធម៌ ប្រវត្តិសាស្ត្រ និងជាគោលដៅទេសចរណ៍ជាច្រើនរបស់ប្រទេសកម្ពុជា។
+            </p>
+            <div class="buttons">
+                <a href="Temples.html" class="btn btn-primary">Popular Temples</a>
+                <a href="Traval.html" class="btn btn-outline">Plan Your Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strory  -->
+    <div class="container">
+        <div class="content">
+            <div class="image-section">
+                <img src="/img/Sunrise.jpg" alt="Bayon Temple">
+            </div>
+            <div class="text-section">
+                <!-- <h5>ដំណើរកំសាន្តកម្ពុជា, ទេសចរណ៍ខ្មែរ:</h5> -->
+                <h1>អំពីសំណង់ប្រាសាទបុរាណខ្មែរ</h1>
+                <p>
+                    ប្រាសាទបុរាណខ្មែរ <b>( Ancient Khmer Temples ) </b> គឺជាមត៌កវប្បធម៌ដ៏អស្ចារ្យនៃអាណាចក្រខ្មែរ
+                    បង្ហាញពីសិល្បៈ និងជំនឿសាសនារបស់ខ្មែរ តាំងពីបុរាណកាលមកទល់ និងបច្ចុប្បន្ន។
+                    សំណងប្រាសាទទាំងនោះត្រូវបានសាងសង់ឡើងចាប់ពីសតវត្សទី 6 ដល់សតវត្សទី 15 ក្នុងរចនាបថនានាដូចជា បាពួន,
+                    បាយ័ន្ដ និងរចនាបថអង្គរជាដើម។
+                </p>
+                <p>
+                    ដើម្បីឧទ្ទិសដល់ព្រហ្មញ្ញសាសនា និងព្រះពុទ្ធសាសានា។ ដូចនេះហើយ
+                    ប្រាសាទអង្គរវត្តត្រូវបានគេសន្មតថាជាប្រាសាទសាសនាដ៏ធំបំផុតនៅលើពិភពលោកដែលជាប់ក្នុងកំណត់ត្រាពិភពលោក
+                    <b>"ហ្គីនណេស" ( Guinness World Records ) ក្នុងអំឡុងឆ្នាំ ១៩៨៥។</b>
+                </p>
+                <p class="highlight"><strong> កម្ពុជា:</strong>
+                    ជាប្រទេសដ៏សម្បូរបែបនៃសំណងប្រាសាទសិល្បៈបុរាណខ្មែរ។</p>
+                <button id="more-info"><i class="icon">👉</i> ស្វែងរកបន្ថែម</button>
+            </div>
+        </div>
+
+        <div class="populartemples">
+            <h3>ប្រាសាទខ្មែរល្បីនាក្រុងសៀមរាប</h3>
+        </div>
+
+        <div class="card-container">
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="/img/Angkor.jpg" alt="Angkor Wat" />
+                    <span class="badge">Must Visit</span>
+                </div>
+                <div class="card-content">
+                    <h2>ប្រាសាទនរគវត្ត</h2>
+                    <p>លក្ខណៈពិសេសរបស់អង្គរវត្ត
+                        អង្គរវត្តមានលក្ខណៈពិសេសមួយគឺប្រែពណ៌ពីសំរិទ្ធទៅប្រាក់ ពីប្រាក់មកមាស ទៅតាមពេលវេលាមួយទៀងទាត់ ព្រឹក
+                        ថ្ងៃ និង រសៀល។ អ្នកស្រាវជ្រាវបានឲ្យដឹងទៀតថា ប្រាសាទអង្គរវត្ត មានតម្លៃទាំងផ្នែកបញ្ញា
+                        ផ្នែកស្ថាបត្យកម្មនិងសម្បត្តិវប្បធម៌។
+                        អង្គរវត្តជាស្ថាបត្យកម្មបានទទួលការគណនានិងធ្វើឡើងយ៉ាងសុក្រឹត្យបំផុតនៅលើពិភពលោក។</p>
+                    <div class="highlights">
+                        <span>Sunrise views</span>
+                        <span>Intricate bas-reliefs</span>
+                        <span class="heritage"><i class="fas fa-globe"></i> UNESCO Heritage</span>
+
+                    </div>
+                    <p class="time"><i>🕒 Best time: Early morning (5:30 AM – 8:00 AM)</i></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="/img/Bay2.jpg" alt="Angkor Thom" />
+                    <span class="badge">Must Visit</span>
+                </div>
+                <div class="card-content">
+                    <h2>ប្រាសាទជ័យគីរី</h2>
+                    <p>The ancient fortified city featuring the famous Bayon Temple with its enigmatic smiling faces
+                        carved in stone.</p>
+                    <div class="highlights">
+                        <span>Bayon Temple</span>
+                        <span>South Gate</span>
+                        <span>Terrace of Elephants</span>
+                    </div>
+                    <p class="time"><i>🕒 Best time:Late afternoon (3:00 PM –6:00 PM)</i></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/ta Phrom.jpg" alt="Angkor Thom" />
+                    <span class="badge">Must Visit</span>
+                </div>
+                <div class="card-content">
+                    <h2>ប្រាសាទរាជវិហារ</h2>
+                    <p>The ancient fortified city featuring the famous Bayon Temple with its enigmatic smiling faces
+                        carved in stone.</p>
+                    <div class="highlights">
+                        <span>TA Phrom Temple</span>
+                        <span>South Gate</span>
+                        <span>Ta Phrom temple is a University of Khmer Empire </span>
+                    </div>
+                    <p class="time"><i>🕒Best time:Late the morning (6:30 AM-8:00 AM)</i></p>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="/img/bakhaeng.jpg" alt="Angkor Wat" />
+                    <span class="badge">Must Visit</span>
+                </div>
+                <div class="card-content">
+                    <h2>ប្រាសាទភ្នំបាខែង</h2>
+                    <p>ប្រាសាទ នរគវត្ត ឬ អង្គវត្ត ត្រូវបានកសាងឡើងដោយព្រះបាទសូរ្យវរ្ម័នទី ២ ចុងសត្ដវត្សទី ១២ និង</p>
+                    <div class="highlights">
+                        <span>Sunrise views</span>
+                        <span>Intricate bas-reliefs</span>
+                        <span class="heritage"><i class="fas fa-globe"></i> UNESCO Heritage</span>
+
+                    </div>
+                    <p class="time"><i>🕒 Best time: Early morning (5:30 AM-8:00 AM)</i></p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="/img/Pheas Khan.jpg" alt="Angkor Thom" />
+                    <span class="badge">Must Visit</span>
+                </div>
+                <div class="card-content">
+                    <h2>ប្រាសាទព្រះខ័ន្ធ</h2>
+                    <p>The ancient fortified city featuring the famous Bayon Temple with its enigmatic smiling faces
+                        carved in stone.</p>
+                    <div class="highlights">
+                        <span>Bayon Temple</span>
+                        <span>South Gate</span>
+                        <span>Terrace of Elephants</span>
+                    </div>
+                    <p class="time"><i>🕒 Best time: Late afternoon (3:00 PM-6:00 PM)</i></p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="/img/Beanteay.jpg" alt="Angkor Thom" />
+                    <span class="badge">Must Visit</span>
+                </div>
+                <div class="card-content">
+                    <h2>ប្រាសាទ បន្ទាយស្រី</h2>
+                    <p>The ancient fortified city featuring the famous Bayon Temple with its enigmatic smiling faces
+                        carved in stone.</p>
+                    <div class="highlights">
+                        <span>Bayon Temple</span>
+                        <span>South Gate</span>
+                        <span>Terrace of Elephants</span>
+                    </div>
+                    <p class="time"><i>🕒 Best time: Late the morning (6:30 AM - 8:00 AM)</i></p>
+                </div>
+            </div>
+        </div>
+        <div class="BTN">
+            <a href="">
+                រូបភាពប្រាសាទ
+            </a>
+        </div>
+        <div class="gallery">
+            <div class="galleryImage">
+                <div class="Image">
+                    <img src="/img/a2.png" alt="">
+                </div>
+            </div>
+            <div class="galleryImage">
+                <div class="Image">
+                    <img src="/img/bp.jfif" alt="">
+                </div>
+            </div>
+            <div class="galleryImage">
+                <div class="Image">
+                    <!-- UP SCALE    -->
+                    <img src="/img/Beanteay.jpg" alt="">
+                </div>
+            </div>
+            <div class="galleryImage">
+                <div class="Image">
+                    <img src="/img/Pheas Khan.jpg" alt="">
+                </div>
+            </div>
+            <div class="galleryImage">
+                <div class="Image">
+                    <!-- UP SCALE    -->
+                    <img src="/img/kravan.jpg" alt="">
+                </div>
+            </div>
+            <div class="galleryImage">
+                <div class="Image">
+                    <!-- UP SCALE    -->
+                    <img src="/img/Birst.jpg" alt="">
+                </div>
+            </div>
+            <div class="galleryImage">
+                <div class="Image">
+                    <img src="/img/bn.jpg" alt="">
+                </div>
+            </div>
+            <div class="galleryImage">
+                <div class="Image">
+                    <!-- UP SCALE    -->
+                    <img src="/img/Bayon.jpg" alt="">
+                </div>
+            </div>
+            <div class="galleryImage">
+                <div class="Image">
+                    <!-- UP SCALE    -->
+                    <img src="/img/bakhaeng.jpg" alt="">
+                </div>
+            </div>
+            <div class="galleryImage">
+                <div class="Image">
+                    <!-- UP SCALE    -->
+                    <img src="/img/Neak Pean.jpg" alt="">
+                </div>
+            </div>
+            <div class="galleryImage">
+                <div class="Image">
+                    <!-- UP SCALE    -->
+                    <img src="/img/Ta Somm.jfif" alt="">
+                </div>
+            </div>
+            <div class="galleryImage">
+                <div class="Image">
+                    <img src="/img/ta Phrom.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ALl Temples in Seim Reap  -->
+        <div class="journey-container">
+            <h1>Plan Your Journey</h1>
+            <p class="subtitle">Everything you need to know for an amazing visit to Angkor Wat and Angkor Thom</p>
+
+            <div class="cards-Traveler">
+                <div class="Travel">
+                    <div class="icon-container">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h2>Best Time to Visit</h2>
+                    <h3>Dry Season (Nov-Apr)</h3>
+                    <p>Cool, dry weather perfect for temple exploration</p>
+                    <h3>Wet Season (May-Oct)</h3>
+                    <p>Fewer crowds, lush landscapes, occasional showers</p>
+                </div>
+
+                <div class="Travel">
+                    <div class="icon-container">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h2>Temple Passes</h2>
+                    <h3>1-Day Pass: $37</h3>
+                    <p>Perfect for first-time visitors</p>
+                    <h3>3-Day Pass: $62</h3>
+                    <p>Ideal for comprehensive exploration</p>
+                    <h3>7-Day Pass: $72</h3>
+                    <p>For temple enthusiasts</p>
+                </div>
+
+                <div class="Travel">
+
+                    <!-- <a href="Temples.html"> -->
+                    <div class="icon-container">
+                        <a href="#">
+                            <i class="fas fa-map-marker-alt">
+
+                            </i>
+                        </a>
+
+                    </div>
+                    <h2>Getting Around</h2>
+                    <h3>Tuk-Tuk</h3>
+                    <p>Traditional and convenient transport</p>
+                    <h3>Bicycle</h3>
+                    <p>Eco-friendly temple exploration</p>
+                    <h3>Private Car</h3>
+                    <p>Comfortable for longer distances</p>
+                    <!-- </a> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="content-lf">
+                <div class="Imglf">
+                    <!-- <img src="/img/Angkor.jpg" alt="logo" /> -->
+
+                </div>
+                <div class="deslf">
+                    <!-- <p>&copy; រក្សសិទ្ធគ្រប់យ៉ាងដោយ​ ខ្មែរវរ្ម័ន​ ២០២៥</p> -->
+                    <P>
+                        អាយសដ្ឋាន៖
+                    </P>
+                    <P>
+                        ក្រុង​ សៀមរាប​ ប្រទេសកម្ពុជា
+                    </P>
+                    <p>លេខទូរស័ព្ទ៖ +855 79 01 02 03</p>
+                </div>
+            </div>
+            <div class="contentcenter">
+                <h3>ទំនាក់ទំនង</h3>
+                <div class="contectIcon">
+                    <a href="https://web.facebook.com/nea.nonn">
+                        <i class="fab fa-facebook">
+                        </i>
+                    </a>
+                    <a href="https://t.me/NEANONN7777">
+                        <i class="fab fa-telegram">
+                        </i>
+                    </a>
+                    <!-- <a href="#">
+            <i class="fab fa-instagram">
+            </i>
+          </a> -->
+                    <a href="#">
+                        <i class="fa-solid fa-envelope">
+                        </i>
+                    </a>
+
+
+                </div>
+            </div>
+            <div class="conten-rg">
+                <div class="visit">
+                    <div class="visittext">
+                        <h3>ចូលរួមទស្សនា ជាមួយសៀមរាបផ្ទះ</h3>
+                    </div>
+                    <a href="/index.html">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="Cpr">
+            <div class="detial">
+                <h3> <a href="/index.html"><i class="fa-regular fa-house"></i></a>សៀមរាបផ្ទះខ្ញុំ</h3>
+            </div>
+            <p>Copyright © 2025 Seim Reap Theas Khnhom. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+
+</body>
+<script>
+
+    //menu toggle small screen
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.getElementById("menu-toggle");
+        const nav = document.querySelector("nav");
+
+        menuToggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+    });
+
+
+
+
+
+
+    // Welcome text writing
+
+    const blackText = "ទីក្រុង យសោធរៈបុរៈ ក្រុងអង្គរ ";
+    const yellowText = "សូមស្វាគមន៍";
+    const fullText = blackText + yellowText;
+
+    let i = 0;
+    const speed = 50;
+    let typingInterval = null;
+    let isVisible = false;
+
+    function typeNextChar() {
+        if (i < fullText.length && isVisible) {
+            const char = fullText.charAt(i);
+            const spanClass = i < blackText.length ? "black-text" : "yellow-text";
+            document.getElementById("typed-text").innerHTML += `<span class="${spanClass}">${char}</span>`;
+            i++;
+        } else {
+            clearInterval(typingInterval);
+        }
+    }
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    isVisible = true;
+                    if (!typingInterval && i < fullText.length) {
+                        typingInterval = setInterval(typeNextChar, speed);
+                    }
+                } else {
+                    isVisible = false;
+                    clearInterval(typingInterval);
+                    typingInterval = null;
+                }
+            });
+        },
+        {
+            threshold: 0.2
+        }
+    );
+
+    window.addEventListener("DOMContentLoaded", () => {
+        const target = document.getElementById("typed-text");
+        observer.observe(target);
+    });
+
+    //end of text writing
+
+
+
+    //Jquery  coding BTN
+    $('#more-info').click(function () {
+        alert("សូមអរគុណ! អ្នកចុចដើម្បីស្វែងរកបន្ថែម។");
+    });
+    $(document).ready(function () {
+        var slide = $('.card');
+        var pagination = $('.pagination');
+        var index = 0;
+        var visibleCount = 3;
+
+
+
+
+
+        function showSlides() {
+            slide.hide();
+            // Hide all cards
+            for (var i = 0; i < visibleCount; i++) {
+                var current = (index + i) % slide.length;
+                slide.eq(current).show();
+            }
+        }
+
+        showSlides();
+        // Initial display
+
+        function GetNextSlide() {
+            index = (index + visibleCount) % slide.length;
+            showSlides();
+        }
+
+        setInterval(GetNextSlide, 7000);
+    });
+
+    // Gallery coding
+    document.addEventListener("DOMContentLoaded", () => {
+        const gallery = document.querySelector(".gallery");
+        const items = Array.from(gallery.children);
+
+        function shuffleGallery() {
+            // Randomize order
+            const shuffled = items.sort(() => Math.random() - 0.5);
+
+            // Append in new order
+            shuffled.forEach(item => gallery.appendChild(item));
+        }
+
+        // Shuffle every 3 seconds
+        setInterval(shuffleGallery, 3000);
+    });
+
+
+
+</script>
+
+</html>

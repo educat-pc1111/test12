@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang&display=swap');
+
+:root {
+  --primary-color: #f7b400;
+  --secondary-color: #fff;
+  --gray-color: #8b8585;
+  --black-color: #000;
+  --white-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Battambang', sans-serif;
+  background-color: #fff;
+  color: #111;
+}
+
+* header {
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: rgb(172, 171, 170);
+}
+
+.navbar {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  /* background: rgba(255, 255, 255, 0.9); */
+  color: #000000;
+}
+
+.navbar .mainlogo>a {
+  text-decoration: none;
+  font-family: "battambang", sans-serif;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.89);
+  font-family: "Koulen", sans-serif;
+  font-size: 20px;
+}
+
+.navbar .mainlogo>a>span {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: rgba(51, 50, 50, 0.89);
+  font-family: "Koulen", sans-serif;
+  font-size: 20px;
+}
+
+.navbar .mainlogo span:hover {
+  color: #636363f3;
+  cursor: pointer;
+}
+
+.navbar .mainlogo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .mainlogo img {
+  height: 20px;
+  margin-right: 8px;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  text-decoration: none;
+ color: #444033;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Times New Roman", sans-serif;
+  font-weight: bold;
+}
+
+.navbar nav>a>span {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #f7bd00;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Bayon ", sans-serif;
+  font-weight: bold;
+}
+
+.navbar nav a:hover {
+  color: #f1f1f1;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#search-input {
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+#search-button {
+  padding: 6px 10px;
+  background-color: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+
+
+
+
+.journey-container {
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.cards-Traveler {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+}
+
+.Travel {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  text-align: left;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Travel:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+
+.icon-container {
+  background-color: #fff1e5;
+  border-radius: 50%;
+  padding: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon-container i {
+  color: #ff914d;
+  font-size: 2em;
+}
+
+
+.Travel h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.Travel h3 {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.Travel p {
+  font-size: 0.95em;
+  color: #777;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* Hide menu toggle on larger screens */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Hero section responsive */
+
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background: #f7b400;
+  color: #868181;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #e2dddd;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+/* ---------- Footer ---------- */
+.footer {
+  background-color: #333;
+
+  height: 550px;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.footer-content {
+  max-width: 1200px;
+
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* .footer-content .content-lf */
+.content-lf {
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+}
+
+
+
+.deslf {
+  font-family: "Koulen", sans-serif;
+  font-size: 16px;
+
+}
+
+.deslf>p {
+  color: #fff;
+  font-family: "Khmer", sans-serif;
+  font-size: 15px;
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+/* .footer-content .contentcenter */
+.contentcenter {
+  text-align: center;
+  padding: 20px;
+}
+
+.contentcenter h3 {
+  font-family: "Khmer", sans-serif;
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #fff;
+  /* or any color you prefer */
+}
+
+.contentcenter .contectIcon {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contentcenter .contectIcon a {
+  color: #fff;
+  /* default icon color */
+  font-size: 32px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.contentcenter .contectIcon a:hover {
+  color: #f4c10f;
+  /* hover color */
+  transform: scale(1.2);
+}
+
+/* footer right    */
+.conten-rg {
+  width: 33.33%;
+  overflow: hidden;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.conten-rg .visittext {
+  text-align: center;
+  font-family: "Koulen", sans-serif;
+  font-size: 24px;
+  color: #fff;
+}
+
+.visittext h3 {
+  font-family: "Khmer", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.visit a i {
+  font-size: 40px;
+  color: #fff;
+  transition: color 0.3s, transform 0.3s;
+  align-items: center;
+}
+
+.visit a i:hover {
+  color: #f4c10f;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.Cpr {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-family: "Koulen", sans-serif;
+  border-radius: 50px;
+}
+
+.Cpr .detial h3 {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.Cpr .detial a {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.Cpr .detial a:hover {
+  color: #f4c10f;
+  transform: scale(1.2);
+}
+
+.Cpr p {
+  font-size: 14px;
+  color: #ccc;
+  margin: 0;
+}
+
+/* Responsive tweak if needed */
+@media screen and (max-width: 768px) {
+  .Cpr .detial h3 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 16px;
+  }
+
+  .Cpr p {
+    font-size: 13px;
+  }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .search-container {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .text>h3 {
+    font-size: 32px;
+  }
+
+  .text>p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text>h3 {
+    font-size: 28px;
+  }
+
+  .text>p {
+    font-size: 15px;
+  }
+
+  .contentcenter .icon {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
+
+/* footer responsive */
+
+@media (max-width: 992px) {
+  .footer-content {
+    flex-wrap: wrap; /* ✅ Center items */
+    text-align: center;      
+  }
+
+  .content-lf,
+  .contentcenter,
+  .conten-rg {
+    width: 48%;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  .content-lf >p {
+    text-align: start;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+  }
+
+  .content-lf,
+  .contentcenter,
+  .conten-rg {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+
+  .Imglf {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Imglf img {
+    margin: 0 auto 15px;
+  }
+}

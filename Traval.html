@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temples</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/CSS/Traval.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bayon&family=Koulen&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="mainlogo">
+                <a href="/index.html">
+                    <span>សៀមរាប​ផ្ទះខ្ញុំ</span>
+                </a>
+
+
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="Temples.html">Temples</a>
+                <a href="exper.html">Experiences</a>
+                <a href="Traval.html">Travel Info</a>
+                <a href="contect.html">Contact</a>
+            </nav>
+
+
+            <!-- Menu toggle for small screens -->
+            <div class="menu-toggle" id="menu-toggle">
+                &#9776;
+            </div>
+        </div>
+    </header>
+    <div class="journey-container">
+            <h1>Plan Your Journey</h1>
+            <p class="subtitle">Everything you need to know for an amazing visit to Angkor Wat and Angkor Thom</p>
+
+            <div class="cards-Traveler">
+                <div class="Travel">
+                    <div class="icon-container">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h2>Best Time to Visit</h2>
+                    <h3>Dry Season (Nov-Apr)</h3>
+                    <p>Cool, dry weather perfect for temple exploration</p>
+                    <h3>Wet Season (May-Oct)</h3>
+                    <p>Fewer crowds, lush landscapes, occasional showers</p>
+                </div>
+
+                <div class="Travel">
+                    <div class="icon-container">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h2>Temple Passes</h2>
+                    <h3>1-Day Pass: $37</h3>
+                    <p>Perfect for first-time visitors</p>
+                    <h3>3-Day Pass: $62</h3>
+                    <p>Ideal for comprehensive exploration</p>
+                    <h3>7-Day Pass: $72</h3>
+                    <p>For temple enthusiasts</p>
+                </div>
+
+                <div class="Travel">
+
+                    <!-- <a href="Temples.html"> -->
+                    <div class="icon-container">
+                        <a href="#">
+                            <i class="fas fa-map-marker-alt">
+
+                            </i>
+                        </a>
+
+                    </div>
+                    <h2>Getting Around</h2>
+                    <h3>Tuk-Tuk</h3>
+                    <p>Traditional and convenient transport</p>
+                    <h3>Bicycle</h3>
+                    <p>Eco-friendly temple exploration</p>
+                    <h3>Private Car</h3>
+                    <p>Comfortable for longer distances</p>
+                    <!-- </a> -->
+
+                </div>
+            </div>
+        </div>
+     <footer class="footer">
+            <div class="footer-content">
+                <div class="content-lf">
+                    <div class="Imglf">
+                        <!-- <img src="/img/Angkor.jpg" alt="logo" /> -->
+
+                    </div>
+                    <div class="deslf">
+                        <!-- <p>&copy; រក្សសិទ្ធគ្រប់យ៉ាងដោយ​ ខ្មែរវរ្ម័ន​ ២០២៥</p> -->
+                        <P>
+                            អាយសដ្ឋាន៖
+                        </P>
+                        <P>
+                            ក្រុង​ សៀមរាប​ ប្រទេសកម្ពុជា
+                        </P>
+                        <p>លេខទូរស័ព្ទ៖ +855 79 01 02 03</p>
+                    </div>
+                </div>
+                <div class="contentcenter">
+                    <h3>ទំនាក់ទំនង</h3>
+                    <div class="contectIcon">
+                        <a href="https://web.facebook.com/nea.nonn">
+                            <i class="fab fa-facebook">
+                            </i>
+                        </a>
+                        <a href="https://t.me/NEANONN7777">
+                            <i class="fab fa-telegram">
+                            </i>
+                        </a>
+                        <!-- <a href="#">
+            <i class="fab fa-instagram">
+            </i>
+          </a> -->
+                        <a href="#">
+                            <i class="fa-solid fa-envelope">
+                            </i>
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="conten-rg">
+                    <div class="visit">
+                        <div class="visittext">
+                            <h3>ចូលរួមទស្សនា ជាមួយសៀមរាបផ្ទះ</h3>
+                        </div>
+                        <a href="/index.html">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="Cpr">
+                <div class="detial">
+                    <h3> <a href="/index.html"><i class="fa-regular fa-house"></i></a>សៀមរាបផ្ទះខ្ញុំ</h3>
+                </div>
+                <p>Copyright © 2025 Seim Reap Theas Khnhom. All rights reserved.</p>
+            </div>
+
+        </footer>
+</body>
+<script>
+    //menu toggle small screen
+    $('#search-button').click(function () {
+        let query = $('#search-input').val().trim();
+        if (query) {
+            window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+        }
+    });
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+
+
+
+    // Research function
+    $(document).ready(function () {
+        $('#search-button').on('click', function () {
+            const query = $('#search-input').val().toLowerCase();
+
+            $('.city-link').each(function () {
+                const text = $(this).text().toLowerCase();
+                if (text.includes(query)) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
+
+        $('#search-input').on('keypress', function (e) {
+            if (e.which === 13) {
+                $('#search-button').click();
+            }
+        });
+    });
+
+
+
+
+</script>
+</html>
